@@ -2,19 +2,12 @@
     --background: #dcdcdc;
     --accent: #191970;
     --light-text: #ffffff;
-    --dark-text: #0d0d0d;
+    --dark-text: #333333;
 
     --heading: 'Source Sans Pro', 'sans-serif';
     --body: 'Source Code Pro', 'monospace';
 
     --text-size: 1.2rem;
-}
-
-.main {
-    height: 200vh;
-    padding-top: 80px;
-    margin: 0;
-    font-family: var(--body);
 }
 
 body {
@@ -120,7 +113,84 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
+/******************
+**** MAIN PAGE ****
+******************/
+.main {
+    padding-top: 80px;
+    margin: 0;
+    font-family: var(--body);
+    color: var(--dark-text);
+}
+
+.intro {
+    margin: 1em;
+}
+
+.personal-photo {
+    border-radius: 50%;
+    margin: 1em;
+    border: solid var(--dark-text);
+    display: block;
+    margin: 1em auto;
+    height: 350px;
+    width: 350px;
+}
+
+/***************
+**** FOOTER ****
+***************/
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: var(--dark-text);
+    font-family: var(--heading);
+    display: flex;
+    align-items: center;
+}
+
+.contact {
+    margin: 1em auto;
+    display: flex;
+}
+
+footer h2 {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin: 1em;
+}
+
+footer ul {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+footer li {
+    margin-left: 3em;
+    margin-bottom: 0;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*********************
+**** DESKTOP SIZE ****
+*********************/
 @media screen and (min-width: 800px) {
+    
+    /********************
+    **** NAVBAR FULL ****
+    ********************/
     .nav-toggle-label {
         display: none;
     }
@@ -150,6 +220,7 @@ nav a:hover {
 
     nav ul {
         display: flex;
+        margin: 0;
     }
 
     nav li {
@@ -181,16 +252,85 @@ nav a:hover {
         transform-origin: left;
     }
 
+    /***********************
+    **** MAIN PAGE FULL ****
+    ***********************/
+
     .main {
         display: grid;
-        height: 200vh;
         padding-top: 80px;
         margin: 0;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        grid-template-columns: 1fr auto minmax(600px, 2fr) 1fr;
+        grid-template-rows: auto auto; 
     }
 
-    .main h1 {
-        grid-column: 1 / 2;
+    .intro {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        margin: 1em;
+        position: relative;
+        top: 40%;
+        color: var(--dark-text);
+    }
+
+    .intro p {
+        color: var(--dark-text);
+        font-size: 1.35em;
+    }
+
+    .personal-photo {
+        border-radius: 50%;
+        border: solid var(--dark-text);
+        margin: 1em;
+        height: 400px;
+        width: 400px;
+        position: relative;
+        top: 28%;
+    }
+
+    /********************
+    **** FOOTER FULL ****
+    ********************/
+    
+    footer {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: var(--dark-text);
+        font-family: var(--heading);
+        display: flex;
+        align-items: center;
+    }
+
+    .contact {
+        margin: 1em auto;
+        display: flex;
+    }
+
+    footer h2 {
+        position: relative;
+        color: white;
         text-align: center;
+        margin: 1em;
+    }
+
+    footer ul {
+        position: relative;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer li {
+        margin-left: 3em;
+        margin-bottom: 0;
+        list-style-type: none;
+        font-size: 25px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
     }
 }
