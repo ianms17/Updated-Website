@@ -11,37 +11,107 @@
     </head>
 
     <body>
-        <!-- Navigation Bar -->
-        <header>
-            <h1>Ian Stephenson</h1>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-        </header>
+        <div class="page">
+            <!-- Navigation Bar -->
+            <header>
+                <h1>Ian Stephenson</h1>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="skills.html">Skills and Interests</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+            </header>
 
-        <!-- Main Page -->
-        <div class="portfolio">
-            <h1>Portfolio</h1>
-        </div>
-
-        <!-- Footer -->
-        <footer>
-            <div class="contact">
-                <h2>Find Me</h2>
-                <ul>
-                    <li><a href="https://github.com/ianms17" target="blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/ian-stephenson" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="mailto:ianmstephenson17@gmail.com" target="blank"><i class="fas fa-envelope fa-2x"></i></a></li>
-                </ul>
+            <!-- Main Page -->
+            <div class="portfolio">
+                <h1>Some of my Projects</h1>
+                <div class="projects">
+                    <div class="project">
+                        <div class="title">
+                            <h2>Chef Prep:</h2>
+                            <h4>Web Development in Python with Django</h4>
+                            <a href="https://github.com/ianms17/ChefPrep" target="blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p>
+                            Chef Prep is an application that helps people to find and plan their meals.
+                            The project was built with Python using the Django framework. This project
+                            was a group project in my Programming Studio class. Through this project I
+                            got a chance to work as an Agile Project Manager, so I learned a ton about
+                            Agile Development, Web Development, and how to work effectively on a team.
+                            I also got experience working with APIs, including Google Authentication.
+                            The project is hosted at 
+                            <a href="chefprep.pythonanywhere.com" target="blank">chefprep.pythonanywhere.com</a>.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="project">
+                        <div class="title">
+                            <h2>Bash Shell:</h2>
+                            <h4>OS Level Coding in C++</h4>
+                            <a href="https://github.com/ianms17/Shell" target="blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p>
+                            With this project I recreated the Linux terminal with most of its operations.
+                            The shell is capable of instruction piping, IO redirection, and supports any
+                            built-in Linux command. With this project, I learned an unbelievable amount
+                            about all of the different terminal functions that exist in Linux and just how
+                            powerful the command line can be. I also got experience writing a parser,
+                            working with file descriptors, and using parent-child processes with fork.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="project">
+                        <div class="title">
+                            <h2>Client Server Processes:</h2>
+                            <h4>Threading, Sockets, and IPC Programming in C++</h4>
+                            <a href="https://github.com/ianms17/Client-Server-2.0" target="blank"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/ianms17/Client-Server-Threaded" target="blank"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/ianms17/Client-Server-TCP" target="blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p>
+                            I completed this project in my Introductory Operating Systems class. The project
+                            is a deep dive into the client-server relationship. We continously built on this
+                            project, starting from Pipe communications, adding Shared Memory and Message Queues,
+                            then adding Concurrency with Threads and Bounded Buffers, and finally utilizing TCP/IP
+                            to transfer files over the internet. There are three different GitHub links above, and
+                            each one corresponds to a repository on a different transfer protocol.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="project">
+                        <div class="title">
+                            <h2>GPA Calculator:</h2>
+                            <h4>First Side Project in Java</h4>
+                            <a href="https://github.com/ianms17/GPACalculator" target="blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p>
+                            My GPA Calculator is the very first side project that I ever did. It was also the first
+                            time that I actually took time to sit and plan out how everything would work before I 
+                            actually started writing any code. The project itself is just a simple command line
+                            calculator, but it reminds me of how far I've come since I started coding.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </footer>
+
+            <!-- Footer -->
+            <footer>
+                <div class="contact">
+                    <h2>Find Me</h2>
+                    <ul>
+                        <li><a href="https://github.com/ianms17" target="blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ian-stephenson" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:ianmstephenson17@gmail.com" target="blank"><i class="fas fa-envelope fa-1x"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
